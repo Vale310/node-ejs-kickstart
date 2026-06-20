@@ -25,6 +25,18 @@ app.get('/about',(req,res)=>{
     res.render('pages/about',{'title': title});
 });
 
+//projects URL
+app.get('/projects',(req,res)=>{
+    let title = "My Projects";
+    res.render('pages/projects',{'title': title});
+});
+
+//colombia URL
+app.get('/colombia',(req,res)=>{
+    let title = "Fun Facts About Colombia";
+    res.render('pages/colombia',{'title': title});
+});
+
 //Set server to listen for requests
 app.listen(port, () => {
   console.log(`Server running at port: ${port}`);
